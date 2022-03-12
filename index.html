@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=MuseoModerno:wght@300&family=Oswald:wght@500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/estilo.css">
+    <meta charset="utf-8">
+    <title>CRIAR CURRICULOS GRATIS</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div id="container-cabecalho">
+
+            <div class="logo">
+
+                <h2>CRIADOR DE <span class="curriculo">CURRICULOS</span></h2>
+
+            </div>
+
+            <div class="menu">
+
+                <nav>
+
+                    <ul id="lista-menu">
+
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">Como Usar</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Planos Mensais</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">Criar Conta</a>
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+
+        <div id = "container-corpo">
+
+            <div id = "box-op">
+
+                <nav>
+
+                    <ul id = "lista-op">
+
+                        <li id = "bt_dados-pessoais">Dados pessoais</li>
+                        <li id = "bt_dados-pessoais2">Dados pessoais</li>
+
+                        <div id = "box-dados-pessoais">
+
+                            
+                            <nav id = "inputs">
+
+                                <label class = "label">Nome</label>
+                                <input type = "text" oninput="addNome(this)">
+
+                                <label class = "label">E-mail</label>
+                                <input type = "text" oninput="addEmail(this)">
+
+                                <label class = "label">Perfil</label>
+                                <input type = "text" oninput="addPerfil(this)">
+
+                                <label class = "label">Telefone</label>
+                                <input type = "text" oninput="addTelefone(this)">
+
+                                <label class = "label">Endereço</label>
+                                <input type = "text" oninput="addEndereco(this)">
+
+                                <label class = "label">Site</label>
+                                <input type = "text" oninput="addSite(this)">
+
+                                <label class = "label">LinkedIn</label>
+                                <input type = "text" oninput="addLinkedln(this)">
+
+                            </nav>
+                            
+                        </div>
+
+
+                        <li id = "bt_formacao">Formaçâo</li>
+                        <li id = "bt_formacao2">Formaçâo</li>
+
+                        <div id = "box-formacao">
+
+                            <nav id = "inputs">
+
+                            <label class = "label">Formaçâo</label>
+                            <input type = "text" oninput="addFormacao(this)">
+
+                            <label class = "label">Instituiçâo</label>
+                            <input type="text" oninput="addInstituicao(this)"> 
+
+                            <label class = "label">Localidade</label>
+                            <input type="text" oninput="addLocalidade(this)">
+
+                        </nav>
+
+                        </div>
+
+
+                        <li id = "bt_experiencia">Experiência</li>
+                        <li id = "bt_experiencia2">Experiência</li>
+
+                        <div id = "box-experiencia">
+
+
+                            <p class="p">Inclua a sua experiência de trabalho relevante dos últimos 10 anos relevante nesta secção.</p>
+
+                            <nav id = "inputs">
+
+                                <label class="label"> Funçâo</label>
+                                <input type = "text" oninput="addFuncao(this)">
+
+                                <label class="label"> Empregador</label>
+                                <input type = "text" oninput="addEmpregador(this)">
+
+                            </nav>
+
+                        </div>
+
+
+                        
+                        <li id = "bt_idiomas">+Idioma</li>
+                        <li id = "bt_idiomas2">+Idioma</li>
+
+                        <div id = "box-idiomas">
+
+                            <nav id = "inputs">
+
+                                <label class="label">Idioma</label>
+                                <input id = "input_idioma" type = "text" oninput="addIdioma(this)">
+
+                                <label class="label">Defina seu Nivel de Fluência</label>
+                                <input id = "nivell" type="range" min="0"  max="3" value="0">  <p id = "identificador" oninput="addIdioma(this)">  </p>
+
+                            </nav>
+
+                        </div>
+
+
+                        <li id = "bt_faixas">Faixas</li>
+                        <li id = "bt_faixas2">Faixas</li>
+
+                        <div id = "box-faixas">
+
+                        
+                         <p class = "p3">Selecionar cor</p>
+
+                          <input type = "color" id="input_colorLateral" oninput="corFaixa()">
+
+                        </div>
+
+                        <li id = "bt_cor-folha">Cor da folha</li>
+                        <li id = "bt_cor-folha2">Cor da folha</li>
+
+                        <div id = "box-cor-folha">
+
+                           
+                            <p class = "p2">Selecionar cor</p>
+
+                               <input type = "color" id = "input_colorFolha" oninput="corFolha()">
+
+
+
+                        </div>
+
+                        
+
+                        <li id = "bt_limpar">Editar</li>
+                        <li id = "bt_limpar2">Editar</li>
+
+                        <div id = "box-limpar">
+
+
+                                <nav id = "lista-LP-folha">
+
+                                    <input id = "btn-fontes1"  type = "button" value="Mudar Fonte">
+                                    <input id = "btn-fontes2"  type = "button" value="Mudar Fonte">
+                                   
+                                   
+                                   
+                                </nav>
+
+                          
+                                <div id = "box-fonte">
+
+                                    <p id = "arial">Arial </p>
+                                    <p id = "times">Times </p>
+                                    <p id = "impact">Impact </p>
+                                    <p id = "verdana">Verdana </p>
+                                    <p id = "tahoma">Tahoma </p>
+                                    <p id = "monospace">monospace </p>
+                                    <p id = "apple"> apple-system</p>
+                                    <p id = "georgia">  Georgia</p>
+                                    <p id = "courier"> Courier</p>
+
+                                    <div id = "box-auemntar">
+
+                                        <p id = "aumentar-letra">Aumentar Tamanho</p>
+                                        <input id = "bt_aumentar_fonte" type="range" min="0"  max="2" value="0">
+
+                                    </div>
+                                </div>
+
+                              
+
+                        </div>
+
+                    </ul>
+
+                </nav>
+
+
+            </div>
+
+            <div id = "folha">
+
+                <div id = "faixa-lateral">
+
+                 <div id = "container-lateral">  
+
+                    <h2 class = "h2">Dados pessoais</h2>
+
+                <div id = "area-nome">
+
+                    <p id = "nome"> </p>
+
+                </div>
+
+                <div id = "area-email">
+
+                    <p id = "e-mail"> </p>
+
+                </div>
+
+                <div id = "area-perfil">
+
+                    <p id = "perfil"> </p>
+
+                </div>
+
+                <div id = "area-telefone">
+
+                    <p id = "telefone"> </p>
+
+                </div>
+
+                <div id = "area-endereço">
+
+                    <p id = "endereco"> </p>
+
+                </div>
+
+                <div id = "area-site">
+
+                    <p id = "site"> </p>
+
+                </div>
+
+                <div id = "area-linkedln">
+
+
+                    <p id = "linkedln">  </p>
+
+                </div>
+
+                </div>
+
+                <div id = "idioma">
+
+                    <h2 class = "h2"> Idioma</h2>
+
+                    <div id = "container-idioma">
+
+                   
+
+                    <div id = "area-idioma">
+
+                        <p id = "idiomaa"></p>
+                        <p id = "nivel1">Basico</p>
+                        <p id = "nivel2">Medio</p>
+                        <p id = "nivel3">Fluente</p>
+
+                        
+
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        
+
+
+            <div id = "box-centro">
+
+                <h2 class = "h2">Formaçâo</h2>
+
+                <div id = "container-centro">
+
+                   
+
+                    <div id = "area-formacao">
+
+                        <p id = "formaçâo">  </p>
+
+                    </div>
+
+                    <div id = "area-intituicao">
+
+                        <p id = "instituicao">  </p>
+
+                    </div>
+
+                    <div id = "area-localidade">
+
+                        <p id = "localidade">  </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id = "box-centro2">
+
+                <h2 class = "h2">Experiência</h2>
+
+                <div id = "container-centro2">
+
+                    <div id = "area-funcao">
+
+                        <p id = "funcao"> </p>
+
+                    </div>
+
+                    <div id = "area-Empregador">
+
+                        <p id = "empregador"> </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+   
+
+
+    <script src="scripts/box_op.js"></script>
+    <script src = "scripts/inputs-add.js"></script>
+</body>
+
+
+</html>
