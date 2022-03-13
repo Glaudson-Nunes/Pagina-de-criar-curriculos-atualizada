@@ -1,5 +1,5 @@
 # Pagina-de-criar-curriculos-atualizada
-Este é um projeto que ja existe aqui no meu portifolio, mas esta é uma versâo melhorada, agora sem limitaçôes para colorir a faixa e a cor da folha, com mais opçôes de fontes e uma navegaçâo mais agradavel, ainda nâo foi aplicado a responsibilidade desse sistema...
+Este é um projeto que ja existe aqui no meu portifolio, mas esta é uma versâo melhorada, agora sem limitaçôes para colorir a faixa e a cor da folha, com mais opçôes de fontes e uma navegaçâo mais agradavel, ainda nâo foi aplicado a responsibilidade desse sistema....
 
 acesse com o pc ou notebok: https://glaudson-nunes.github.io/Pagina-de-criar-curriculos-atualizada/
 
